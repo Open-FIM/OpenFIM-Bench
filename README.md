@@ -1,76 +1,116 @@
+
 # Food is Medicine Benchmark
 
-Overview
+## Overview
 
-We are building a full-detail benchmark dataset. The benchmark should evaluate whether FIM-RAG can provide accurate, grounded, safe, and context-aware nutrition guidance for people with comorbid and multimorbid health profiles.
+The **Food is Medicine (FIM) Benchmark** is a comprehensive dataset designed to evaluate whether Food-is-Medicine Retrieval-Augmented Generation (FIM-RAG) systems can deliver:
 
-The benchmark dataset should be built from realistic demographic, dietary, clinical, laboratory, medication, and social-context profiles.  There is no identifiable patient records so the benchmark can be freely shared, extended, and run by any contributor without privacy or IRB concerns.
+- **Accurate**
+- **Grounded**
+- **Safe**
+- **Context-aware**
 
-The overall plan is to use:
+nutrition recommendations for individuals with **comorbid and multimorbid health conditions**.
 
-    NHANES as the primary source for population-level demographic, dietary, social, anthropometric, laboratory, and questionnaire-derived health context.
-    MIMIC as the clinical-complexity layer, especially for medically complex, medication-heavy, lab-rich, inpatient-style profiles.
-    Synthetic-data methods, like synthpop (https://cran.r-project.org/web/packages/synthpop/index.html), to create statistically faithful but non-identifiable synthetic profiles.
-    GenAI/LLMs to add narrative context and generate adversarial edge cases after the structured data backbone is created.
+The benchmark is built using **realistic, high-dimensional profiles** that integrate:
 
-Start with the NHANES demographic and dietary extraction work. The full MIMIC dataset is currently in the process of being retrieved. Until then, the freely available 100-patient MIMIC-IV Clinical Database Demo can be used to prototype MIMIC-style extraction code.
-Data access
-NHANES
+- Demographics  
+- Dietary intake  
+- Clinical conditions  
+- Laboratory measurements  
+- Medications  
+- Social and behavioral context  
 
-Use CDC/NCHS public-use NHANES data.
+Importantly, the dataset contains **no identifiable patient data**, enabling:
 
-NHANES files are available by cycle and component:
+- Open sharing  
+- Reproducibility  
+- Community contributions  
+- No IRB or privacy constraints  
 
-    Demographics
-    Dietary
-    Examination
-    Laboratory
-    Questionnaire
-    Limited Access Data
+---
 
-For this benchmark, use only public-use NHANES files.
+## Data Sources and Construction
 
-Relevant starting points:
+The dataset is constructed using a hybrid approach combining real-world data sources and synthetic generation methods and includes:
 
-    NHANES main data portal:
-    https://wwwn.cdc.gov/nchs/nhanes/
+- **NHANES**: Primary source for population-level demographics, diet, labs, and health context  
+- **MIMIC**: Adds structured clinical complexity (comorbidities, medications, inpatient patterns)  
+- **Synthetic data methods (e.g., synthpop)**: Generate statistically realistic, non-identifiable profiles  
+- **GenAI / LLMs**: Provide narrative enrichment and adversarial edge cases (not a replacement for structured data)
 
-    NHANES dietary data page:
-    https://wwwn.cdc.gov/nchs/nhanes/search/datapage.aspx?Component=Dietary
+> ⚠️ GenAI is used only for enrichment—not as a replacement for structured data sources.
 
-    NHANES dietary variable list:
-    https://wwwn.cdc.gov/nchs/nhanes/search/variablelist.aspx?Component=Dietary&Cycle=
+---
 
-Priority cycles to consider:
+## Development Roadmap
 
-    NHANES 2017–March 2020 pre-pandemic
-    NHANES August 2021–August 2023
-    Earlier continuous NHANES cycles if needed for variable coverage or harmonization
+Current priority:
 
-MIMIC
+1. **NHANES extraction and harmonization**
+2. **Prototype MIMIC pipelines using demo data**
+3. **Integrate synthetic data generation**
+4. **Add narrative and adversarial layers**
 
-The full MIMIC dataset is being retrieved separately. For now, contributors should use the MIMIC-IV Clinical Database Demo for code prototyping.
+The full MIMIC dataset is currently being retrieved. Until then:
 
-MIMIC-IV Clinical Database Demo:
+- Use the **MIMIC-IV Clinical Database Demo (100 patients)** for prototyping.
 
-    100-patient subset
-    Openly available
-    CSV files
-    Same general schema and structure as MIMIC-IV
-    Excludes free-text clinical notes
-    Useful for prototyping extraction of admissions, diagnoses, labs, medications, ICU stays, and structured clinical-complexity features
+---
 
-MIMIC-IV Demo access page:
+## Methodology
 
-https://physionet.org/content/mimic-iv-demo/
-Methodology
+Instead, we adopt a **layered synthesis approach**:
 
-NHANES and MIMIC cannot be directly merged as if they contain the same people.
+1. **NHANES Layer**
+   - Provides population-scale realism  
+   - Captures diet, lifestyle, and cardiometabolic context  
 
-Instead,
+2. **MIMIC Layer**
+   - Provides structured clinical complexity  
+   - Models comorbidity and acute care patterns  
 
-    NHANES provides population-realistic demographic, dietary, social, and cardiometabolic context.
-    MIMIC provides structured clinical-complexity patterns.
-    Synthetic-data methods will need to be used to generate realistic benchmark profiles informed/guided by these data layers.
-    Hybrid synthetic cases should be clearly labeled as synthetic or synthetic-hybrid profiles.
-    GenAI can be used for narrative enrichment and stress-test case generation, not as a substitute for structured source data.
+3. **Synthetic Integration**
+   - Combines both layers into realistic profiles  
+   - Ensures statistical fidelity without identifiability  
+
+4. **Hybrid Case Generation**
+   - Profiles must be clearly labeled as:
+     - `synthetic`
+     - `synthetic-hybrid`
+
+5. **Narrative + Adversarial Augmentation**
+   - Adds real-world context (e.g., constraints, behavior)
+   - Introduces failure modes for benchmarking robustness  
+
+---
+
+## Design Principles
+
+- ✅ **Non-identifiable by construction**
+- ✅ **Reproducible and extensible**
+- ✅ **Clinically and nutritionally realistic**
+- ✅ **Transparent about synthetic components**
+- ✅ **Designed for stress-testing AI systems**
+
+---
+
+## Contribution Guidelines (Suggested)
+
+Contributors can help with:
+
+- NHANES data extraction and harmonization  
+- MIMIC demo parsing and feature engineering  
+- Synthetic data generation pipelines  
+- Benchmark task design (QA, recommendations, evaluation)  
+- Adversarial and edge-case scenario creation  
+
+---
+
+## Goal
+
+Enable the development and evaluation of **robust, clinically safe, and context-aware Food-is-Medicine AI systems** that work reliably across:
+
+- Diverse populations  
+- Complex multimorbidity  
+- Real-world constraints  
