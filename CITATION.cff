@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use OpenFIM-Bench, please cite it as below."
+title: "OpenFIM-Bench: Population-Grounded, Expert-Governed Benchmarks for Evaluating Food-is-Medicine AI"
+type: software
+url: "https://github.com/Open-FIM/OpenFIM-Bench"
+repository-code: "https://github.com/Open-FIM/OpenFIM-Bench"
+license: Apache-2.0
+authors:
+  - name: "The OpenFIM-Bench Contributors"
+keywords:
+  - food-is-medicine
+  - nutrition
+  - benchmark
+  - NHANES
+  - clinical AI
+  - AI evaluation

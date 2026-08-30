@@ -1,0 +1,24 @@
+OpenFIM-Bench
+Copyright 2026 The OpenFIM-Bench Contributors
+
+This product includes software developed as part of the OpenFIM-Bench
+project (https://github.com/Open-FIM/OpenFIM-Bench), an open-source
+effort to build population-grounded, expert-governed benchmarks for
+evaluating Food-is-Medicine AI.
+
+OpenFIM-Bench uses de-identified/synthetic data derived from or inspired
+by the following public sources. Please consult each source's own terms
+of use before redistributing derived data:
+
+  - NHANES (National Health and Nutrition Examination Survey),
+    U.S. Centers for Disease Control and Prevention (CDC/NCHS)
+  - MIMIC (Medical Information Mart for Intensive Care), MIT Lab for
+    Computational Physiology / PhysioNet — requires separate credentialed
+    access and a signed Data Use Agreement; MIMIC-derived data or
+    derivatives are not redistributed in this repository
+  - synthpop and other synthetic-data generation methods, used to
+    produce statistically realistic, non-identifiable profiles
+
+This NOTICE file is provided for informational purposes only and does
+not modify the License. See the LICENSE file for the full terms under
+which this project is distributed.
