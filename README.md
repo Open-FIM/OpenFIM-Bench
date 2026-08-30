@@ -1,32 +1,30 @@
+# OpenFIM-Bench
 
-# Food is Medicine Benchmark
+**Population-grounded, expert-governed benchmarks for evaluating Food-is-Medicine AI**
 
-## Overview
+OpenFIM-Bench is an early-stage open-source effort to develop reproducible benchmarks for evaluating whether AI-generated nutrition guidance is **appropriate, evidence-based, context-aware, and safe** for Food-is-Medicine (FIM) applications.
 
-The **Food is Medicine (FIM) Benchmark** is a comprehensive dataset designed to evaluate whether Food-is-Medicine Retrieval-Augmented Generation (FIM-RAG) systems can deliver:
+## Why OpenFIM-Bench?
 
-- **Accurate**
-- **Grounded**
-- **Safe**
-- **Context-aware**
+Generative AI systems can already produce plausible nutrition recommendations. OpenFIM-Bench is being developed to help the nutrition, public-health, and AI communities investigate how AI system can go beyond and lead towards what matters, prioritize competing nutrition and health concerns, and make recommendations that fall within the range of professionally defensible nutrition judgment?
 
-nutrition recommendations for individuals with **comorbid and multimorbid health conditions**.
+Appropriate nutrition guidance can depend on multiple interacting factors, including:
 
-The benchmark is built using **realistic, high-dimensional profiles** that integrate:
+- current dietary intake;
+- age, anthropometrics, and physical activity;
+- laboratory measurements;
+- chronic conditions and multimorbidity;
+- medications and supplements, when available;
+- food access and food security;
+- household and socioeconomic circumstances;
+- cultural context and food preferences; and
+- whether the situation requires general nutrition education or professional clinical care.
 
-- Demographics  
-- Dietary intake  
-- Clinical conditions  
-- Laboratory measurements  
-- Medications  
-- Social and behavioral context  
+Often qualified Registered Dietitian Nutritionists (RDNs) may recommend different interventions for the same person while both recommendations remain reasonable.
 
-Importantly, the dataset contains **no identifiable patient data**, enabling:
+An AI-generated recommendation can sound plausible while overlooking an important clinical risk, applying otherwise valid nutrition advice in the wrong context, recommending unrealistic changes, or failing to recognize when professional referral is appropriate.
 
-- Open sharing  
-- Reproducibility  
-- Community contributions  
-- No IRB or privacy constraints  
+OpenFIM-Bench is intended to evaluate this complexity.
 
 ---
 
@@ -39,78 +37,51 @@ The dataset is constructed using a hybrid approach combining real-world data sou
 - **Synthetic data methods (e.g., synthpop)**: Generate statistically realistic, non-identifiable profiles  
 - **GenAI / LLMs**: Provide narrative enrichment and adversarial edge cases (not a replacement for structured data)
 
-> ⚠️ GenAI is used only for enrichment—not as a replacement for structured data sources.
+The initial work focused on the **National Health and Nutrition Examination Survey (NHANES)** to construct population-grounded nutrition evaluation cases.
+
+NHANES contains rich information collected from the same participants across domains such as:
+
+- demographics;
+- dietary recalls and nutrient intake;
+- anthropometrics;
+- laboratory measurements;
+- health conditions;
+- medications in applicable cycles;
+- physical activity;
+- food security; and
+- socioeconomic characteristics.
+
+These data provide valuable real-world context, OpenFIM-Bench is developing the methods and community processes needed to add evaluation layer to help answer:
+
+- which information should be prioritized in a nutrition assessment;
+- what the highest-priority nutrition problem is;
+- which interventions are professionally appropriate;
+- which alternative recommendations are also defensible;
+- where qualified RDNs disagree; or
+- which AI recommendations should be considered inappropriate or unsafe.
 
 ---
 
-## Development Roadmap
+## Benchmark concept
 
-Current priority:
+Our current benchmark hypothesis is:
 
-1. **NHANES extraction and harmonization**
-2. **Prototype MIMIC pipelines using demo data**
-3. **Integrate synthetic data generation**
-4. **Add narrative and adversarial layers**
+```text
+Population data
+      |
+      v
+Structured person-level nutrition case
+      |
+      v
+Independent expert assessment
+      |
+      v
+Agreement + acceptable variation + disagreement + safety boundaries
+      |
+      v
+Common evaluation framework
+      |
+      v
+Compare AI systems
+```
 
-The full MIMIC dataset is currently being retrieved. Until then:
-
-- Use the **MIMIC-IV Clinical Database Demo (100 patients)** for prototyping.
-
----
-
-## Methodology
-
-Instead, we adopt a **layered synthesis approach**:
-
-1. **NHANES Layer**
-   - Provides population-scale realism  
-   - Captures diet, lifestyle, and cardiometabolic context  
-
-2. **MIMIC Layer**
-   - Provides structured clinical complexity  
-   - Models comorbidity and acute care patterns  
-
-3. **Synthetic Integration**
-   - Combines both layers into realistic profiles  
-   - Ensures statistical fidelity without identifiability  
-
-4. **Hybrid Case Generation**
-   - Profiles must be clearly labeled as:
-     - `synthetic`
-     - `synthetic-hybrid`
-
-5. **Narrative + Adversarial Augmentation**
-   - Adds real-world context (e.g., constraints, behavior)
-   - Introduces failure modes for benchmarking robustness  
-
----
-
-## Design Principles
-
-- ✅ **Non-identifiable by construction**
-- ✅ **Reproducible and extensible**
-- ✅ **Clinically and nutritionally realistic**
-- ✅ **Transparent about synthetic components**
-- ✅ **Designed for stress-testing AI systems**
-
----
-
-## Contribution Guidelines (Suggested)
-
-Contributors can help with:
-
-- NHANES data extraction and harmonization  
-- MIMIC demo parsing and feature engineering  
-- Synthetic data generation pipelines  
-- Benchmark task design (QA, recommendations, evaluation)  
-- Adversarial and edge-case scenario creation  
-
----
-
-## Goal
-
-Enable the development and evaluation of **robust, clinically safe, and context-aware Food-is-Medicine AI systems** that work reliably across:
-
-- Diverse populations  
-- Complex multimorbidity  
-- Real-world constraints  
