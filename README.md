@@ -1,10 +1,10 @@
-# OpenFIM-Bench
-
 **Population-grounded, expert-governed benchmarks for evaluating Food-is-Medicine AI**
 
 OpenFIM-Bench is an early-stage open-source effort to develop reproducible benchmarks for evaluating whether AI-generated nutrition guidance is **appropriate, evidence-based, context-aware, and safe** for Food-is-Medicine (FIM) applications.
 
 ## Why OpenFIM-Bench?
+
+<img width="1337" height="741" alt="image" src="https://github.com/user-attachments/assets/04090347-3045-4c1f-b95d-e2d28d167691" />
 
 Generative AI systems can already produce plausible nutrition recommendations. OpenFIM-Bench is being developed to help the nutrition, public-health, and AI communities investigate how AI system can go beyond and lead towards what matters, prioritize competing nutrition and health concerns, and make recommendations that fall within the range of professionally defensible nutrition judgment?
 
