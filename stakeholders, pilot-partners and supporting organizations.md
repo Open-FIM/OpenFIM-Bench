@@ -4,17 +4,16 @@ OpenFIM is being shaped with input from people and organizations working across 
 
 We welcome stakeholders who can help us identify real-world use cases, review whether proposed tools are practical and appropriate, and help guide how the ecosystem should evolve.
 
-### Public Health & Community Stakeholders
+### Public Health & Community Pilot-partners - Providing perspective on community-based nutrition education, outreach, and implementation needs.
 
-- **[University of Arizona Cooperative Extension]** — Providing perspective on community-based nutrition education, outreach, and implementation needs.
+- **[University of Arizona Cooperative Extension]** 
 
-### Clinical & Nutrition Stakeholders
+### Clinical & Nutrition Pilot-partners - Providing nutrition, dietetics, and clinical perspective on safety, feasibility, and appropriate use.
 
-- **[Southern Arizona Dietetics Association]** — Providing nutrition, dietetics, or clinical perspective on safety, feasibility, and appropriate use.
-  
+- **[Southern Arizona Dietetics Association]** 
 - **[Independent RDs]**
 
-### Research & Technical Contributors
+### Research & Technical Advisors
 
 - **[Simmons University Department of Nutrition]** — Contributing expertise in nutrition science evaluation.
 
