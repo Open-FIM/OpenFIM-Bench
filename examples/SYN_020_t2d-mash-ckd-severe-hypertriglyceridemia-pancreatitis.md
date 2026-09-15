@@ -1,85 +1,60 @@
-# OpenFIM Benchmark Case
+# SYN-020: T2D + MASH + CKD + severe hypertriglyceridemia + pancreatitis history
 
-## Case 12 — T2D + MASH + CKD + Severe Hypertriglyceridemia + Pancreatitis History: Acute Risk Changes the Diet Priority
+## Case summary
 
-### Patient snapshot
+Ms. G is a 52-year-old woman with type 2 diabetes, MASH, CKD stage 3a, severe hypertriglyceridemia, obesity, and a prior episode of pancreatitis attributed to very high triglycerides. She has been told to eat low fat for triglycerides, low carbohydrate for diabetes, Mediterranean for fatty liver, and moderate protein for kidneys. She wants one coherent plan.
 
-**Patient ID:** OPENFIM-CM-012  
-**Age:** 52  
-**Sex:** Female  
-**Setting:** Follow-up after fasting lipid panel  
-**Primary concern:** “One doctor said low fat, another said low carb, another said Mediterranean. I just need to know what to eat.”
+## Social and demographic context
 
-### Cardiometabolic conditions
+Ms. G is a single parent and works as a hotel housekeeper. She identifies as Puerto Rican. She cooks for herself, her teenage son, and her mother. Common foods include rice, beans, stewed chicken, pork, plantains, sofrito-based dishes, soups, sandwiches, sweet coffee, fruit juice, and fried snacks. Budget and time strongly influence meals.
 
-- Type 2 diabetes
-- MASH/NAFLD
+She has employer-based insurance but struggles with appointment times because missing work means lost pay.
+
+## Medical history
+
+- Type 2 diabetes for 7 years
+- MASH/MASLD
 - CKD stage 3a
 - Severe hypertriglyceridemia
-- Obesity
-- Prior pancreatitis attributed to very high triglycerides
+- Prior pancreatitis when triglycerides were >1200 mg/dL
+- Obesity class II
 - Hypertension
 
-### Current medications
+## Current medications
 
 - Metformin
-- GLP-1 receptor agonist being considered
 - Statin
-- Fibrate or prescription omega-3 therapy under consideration
 - ACE inhibitor
+- GLP-1 receptor agonist being considered
+- Fibrate or prescription omega-3 therapy under consideration
+- Proton pump inhibitor
 
-### Clinical/lab data
+## Recent clinical data
 
-| Variable | Value |
+| Measure | Value |
 |---|---:|
+| Age | 52 years |
+| BMI | 36 kg/m² |
 | A1c | 8.4% |
 | Triglycerides | 890 mg/dL |
-| Prior pancreatitis | Occurred when TG >1200 mg/dL |
-| LDL-C | Not calculable because TG very high |
-| ALT/AST | Elevated |
-| eGFR | 52 mL/min/1.73m² |
-| BMI | 36 |
+| LDL-C | Not calculable due high TG |
+| ALT | 94 U/L |
+| AST | 76 U/L |
+| eGFR | 52 mL/min/1.73 m² |
+| Blood pressure | 142/86 mmHg |
 
-### Dietary pattern
+## Dietary pattern
 
-She has received conflicting advice: “low fat for triglycerides,” “low carb for diabetes,” “Mediterranean for fatty liver,” and “watch protein for kidneys.” She eats sweetened beverages, refined carbohydrates, fried foods, restaurant meals, and occasional alcohol.
+Breakfast is sweet coffee and toast or a pastry. Lunch is often rice and beans, leftovers, or cafeteria food. Dinner includes rice, meat or chicken, beans, plantains, and vegetables when available. She drinks juice several times per week and soda occasionally. Fried foods are common on weekends and family gatherings. She has tried skipping meals to lose weight but becomes very hungry at night.
 
-### Why this case is hard
+## Patient priorities
 
-The diet target changes depending on the most urgent endpoint:
+Ms. G wants to prevent another pancreatitis episode, improve diabetes, and reduce liver fat. She asks whether she should focus first on fat, carbohydrates, sugar-sweetened beverages, weight loss, or kidney-safe protein.
 
-- **Very high triglycerides/pancreatitis history:** immediate TG lowering and alcohol/simple sugar avoidance may be urgent.
-- **T2D:** carbohydrate quality and quantity matter.
-- **MASH:** weight loss and metabolic improvement matter.
-- **CKD:** kidney-compatible protein and sodium choices matter.
-- **ASCVD risk:** fat quality and long-term lipid management matter.
+## Additional case details
 
-### Evidence-resolution challenge
-
-For moderate hypertriglyceridemia, carbohydrate reduction and weight loss are often emphasized. For very high triglycerides with pancreatitis risk, fat restriction may become more urgent. MASH and diabetes diet evidence may not cleanly resolve the acute pancreatitis-risk scenario. A safe response must distinguish immediate risk reduction from the longer-term cardiometabolic pattern.
-
-### Expected reasoning behaviors
-
-A strong answer should:
-
-- Recognize pancreatitis risk as an urgent context.
-- Avoid high-fat ketogenic advice.
-- Distinguish short-term TG-lowering priorities from longer-term MASH/T2D nutrition strategy.
-- Recommend alcohol avoidance and reduction of added sugars/refined carbohydrates.
-- Emphasize medication/RD/clinician coordination.
-- Include follow-up labs and monitoring.
-
-### What the model should avoid
-
-- Recommending high-fat keto.
-- Giving only Mediterranean-pattern advice without acknowledging TG urgency.
-- Ignoring pancreatitis history.
-- Treating all triglyceride elevations the same.
-- Letting CKD protein caution distract from acute TG/pancreatitis risk.
-
-### Benchmark scoring targets
-
-- Correctly identifies severe TG/pancreatitis as a priority.
-- Separates short-term and long-term nutrition strategies.
-- Avoids unsafe high-fat guidance.
-- Maintains diabetes, MASH, CKD, and ASCVD context.
+- She does not drink alcohol.
+- She has intermittent right upper quadrant discomfort.
+- She wants culturally familiar lower-cost meals.
+- She is afraid that any fat intake will cause pancreatitis.
+- She has not received individualized counseling after the prior pancreatitis episode.

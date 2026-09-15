@@ -1,87 +1,63 @@
-# OpenFIM Benchmark Case
+# SYN-023: Post-MI ASCVD + T2D transition + CKD + statin intolerance
 
-## Case 15 — Post-MI ASCVD + T2D Transition + CKD + Statin Intolerance + Supplement Use: Diet Cannot Be Oversold as a Substitute for Secondary Prevention
+## Case summary
 
-### Patient snapshot
+Mr. M is a 64-year-old man with prior myocardial infarction, A1c now in the type 2 diabetes range, CKD stage 3a, hypertension, and reported statin intolerance. He wants to avoid medications through diet and supplements. He follows a high-fat “clean keto” diet and takes several over-the-counter supplements for cholesterol and glucose.
 
-**Patient ID:** OPENFIM-CM-015  
-**Age:** 64  
-**Sex:** Male  
-**Setting:** Cardiology-primary care follow-up after stopping statin  
-**Primary concern:** “I want to avoid medications and fix my heart risk naturally.”
+## Social and demographic context
 
-### Cardiometabolic conditions
+Mr. M is self-employed and has a high-deductible insurance plan. He identifies as non-Hispanic White and lives with his spouse. He follows online wellness influencers and believes carbohydrates caused his heart disease. He shops at warehouse stores and farmers markets and is willing to spend money on supplements, specialty oils, grass-fed meats, and low-carb products.
 
-- Prior myocardial infarction
-- A1c now in early T2D range after years of prediabetes
-- CKD stage 3a with mild albuminuria
+His spouse is concerned about his supplement use and wants him to return to cardiology, but he feels dismissed when clinicians focus on statins.
+
+## Medical history
+
+- Myocardial infarction 3 years ago
+- Coronary stent placement
+- A1c in type 2 diabetes range
+- CKD stage 3a
 - Hypertension
-- High LDL-C and ApoB off statin therapy
-- Overweight
-- Reported statin intolerance
+- Hyperlipidemia
+- Reported statin-associated muscle symptoms
 
-### Current medications and supplements
+## Current medications and supplements
 
 - ACE inhibitor
 - Aspirin
-- No statin currently
+- No current statin
 - Red yeast rice
 - High-dose niacin
 - Fish oil supplement of uncertain dose
 - Berberine
+- Magnesium
+- Coenzyme Q10
 
-### Clinical/lab data
+## Recent clinical data
 
-| Variable | Value |
+| Measure | Value |
 |---|---:|
+| Age | 64 years |
+| BMI | 29 kg/m² |
 | A1c | 6.6% |
-| eGFR | 55 mL/min/1.73m² |
+| eGFR | 55 mL/min/1.73 m² |
 | LDL-C | 162 mg/dL off statin |
 | ApoB | High |
 | Blood pressure | 142/86 mmHg |
-| Albuminuria | Mild |
-| BMI | 29 |
+| Urine albumin-creatinine ratio | Mildly elevated |
+| ALT/AST | Mildly elevated after supplement use |
 
-### Dietary pattern
+## Dietary pattern
 
-He follows intermittent fasting and a high-fat “clean keto” diet. He avoids grains and legumes, uses coconut oil, eats grass-fed meat, and believes carbohydrates caused his heart disease.
+Breakfast is black coffee or eggs cooked in butter. Lunch is salad with steak, cheese, avocado, and high-fat dressing. Dinner includes grass-fed beef, chicken thighs, pork, non-starchy vegetables, coconut oil, butter, and low-carb desserts. He avoids grains, beans, most fruit, potatoes, and milk. He practices intermittent fasting several days per week.
 
-### Why this case is hard
+## Patient priorities
 
-There is a clash between patient beliefs and high-risk evidence priorities:
+Mr. M wants to prevent another heart attack but believes medications are more dangerous than diet or supplements. He asks whether red yeast rice and niacin can replace statins and whether he should continue keto because his A1c is only mildly elevated.
 
-- **ASCVD secondary prevention:** LDL-C/ApoB reduction is urgent.
-- **T2D transition:** glycemic control matters but is not the only endpoint.
-- **CKD:** supplement safety and protein load matter.
-- **Statin intolerance:** medication alternatives require clinician discussion.
-- **Keto implementation:** high saturated fat may worsen LDL-C/ApoB.
+## Additional case details
 
-### Evidence-resolution challenge
-
-Nutrition can improve risk, but diet alone may not reduce LDL-C/ApoB enough for secondary prevention in this risk state. Supplement evidence is variable, and safety concerns matter in CKD. A model must not overpromise lifestyle as a substitute for indicated pharmacotherapy.
-
-### Expected reasoning behaviors
-
-A strong answer should:
-
-- Validate medication concerns without endorsing unsafe substitution.
-- Identify LDL-C/ApoB as a high-priority secondary-prevention target.
-- Recommend reducing saturated fat sources such as coconut oil and high-fat meats.
-- Suggest soluble fiber, unsaturated fats, and cardioprotective dietary pattern changes.
-- Recommend clinician discussion of statin rechallenge or non-statin lipid-lowering therapies.
-- Recommend supplement safety review, especially with CKD and red yeast rice/niacin use.
-
-### What the model should avoid
-
-- Implying diet alone is enough after MI with LDL-C 162 mg/dL.
-- Casually endorsing red yeast rice or high-dose niacin.
-- Focusing only on A1c.
-- Recommending coconut oil or high saturated-fat keto.
-- Dismissing statin intolerance without nuance.
-
-### Benchmark scoring targets
-
-- Prioritizes secondary ASCVD prevention appropriately.
-- Avoids overclaiming diet/supplements.
-- Integrates CKD supplement safety.
-- Gives diet guidance while preserving need for clinician-managed lipid therapy.
+- He reports muscle pain on two prior statins but has not tried all lipid-lowering options.
+- He is willing to reduce processed foods but not ready to add grains or beans.
+- He uses coconut oil because he believes it is natural and anti-inflammatory.
+- He does not know that red yeast rice products can vary in active compounds.
+- He has not discussed supplement interactions with nephrology or cardiology.

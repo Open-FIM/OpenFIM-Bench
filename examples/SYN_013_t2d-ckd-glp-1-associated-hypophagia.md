@@ -1,85 +1,61 @@
-# OpenFIM Benchmark Case
+# SYN-013: T2D + CKD + GLP-1–associated hypophagia
 
-## Case 5 — T2D + CKD + GLP-1–Associated Hypophagia: Appetite Suppression Changes the Nutrition Problem
+## Case summary
 
-### Patient snapshot
+Ms. P is a 60-year-old woman with type 2 diabetes, CKD stage 3b, obesity, hypertension, and albuminuria. She started semaglutide 4 months ago. Her glucose improved and she lost weight, but she now has persistent nausea, early satiety, constipation, and reduced intake. Her clinician is pleased with her A1c, but she feels weak and is worried that she is “not eating enough.”
 
-**Patient ID:** OPENFIM-CM-005  
-**Age:** 59  
-**Sex:** Male  
-**Setting:** Diabetes medication follow-up  
-**Primary concern:** “The medication is working. I am barely hungry and losing weight. But I feel tired, and some days I mostly drink coffee and eat one small meal.”
+## Social and demographic context
 
-### Cardiometabolic conditions
+Ms. P works part-time as a home health aide. Her schedule changes weekly, and she often eats in her car between clients. She lives with her sister and helps care for an elderly parent. She identifies as Caribbean American and prefers rice and peas, stewed chicken, fish, plantains, cabbage, soups, porridge, tropical fruits, and herbal teas.
 
-- Type 2 diabetes
-- CKD stage 3a
-- Obesity with recent rapid weight loss
+She has insurance but high copays. She is concerned about food waste because she buys groceries and then cannot tolerate eating them.
+
+## Medical history
+
+- Type 2 diabetes for 12 years
+- CKD stage 3b
+- Albuminuria
+- Obesity
 - Hypertension
 - Hyperlipidemia
-- Possible obstructive sleep apnea
+- Constipation worsened after GLP-1 therapy
 
-### Current medications
+## Current medications
 
-- Tirzepatide, recently escalated
-- Metformin
-- Empagliflozin
-- Lisinopril
-- Atorvastatin
-- Hydrochlorothiazide
+- Semaglutide
+- SGLT2 inhibitor
+- ACE inhibitor
+- Statin
+- Thiazide-like diuretic
+- Vitamin D
+- Occasional stool softener
 
-### Clinical/lab data
+## Recent clinical data
 
-- BMI: decreased from 36 to 32 kg/m² over 4 months
-- HbA1c: improved from 8.4% to 6.8%
-- eGFR: 52 mL/min/1.73 m²
-- Potassium: 4.7 mmol/L
-- LDL-C: 84 mg/dL
-- Blood pressure: 118/70 mmHg
-- Reports nausea, constipation, low appetite, and fatigue
-- Diet recall suggests low protein and low micronutrient density
+| Measure | Value |
+|---|---:|
+| Age | 60 years |
+| BMI | 36 → 31 kg/m² over 4 months |
+| A1c | 8.4% → 6.7% |
+| eGFR | 38 mL/min/1.73 m² |
+| Potassium | 4.8 mmol/L |
+| Bicarbonate | Low-normal |
+| Urine albumin-creatinine ratio | Elevated |
+| Blood pressure | 132/78 mmHg |
+| Reported intake | 1 small meal + snacks on many days |
 
-### Dietary pattern
+## Dietary pattern
 
-- Breakfast: coffee only
-- Lunch: sometimes skipped
-- Dinner: small portion of pasta, soup, or takeout
-- Snacks: crackers, fruit, or nothing
-- Fluid intake inconsistent
-- Protein foods often avoided because they feel heavy
-- Fiber intake is low despite constipation
+Before semaglutide, she ate three meals daily. Now she often has tea and crackers in the morning, a few bites of leftovers at lunch, and soup or fruit in the evening. She avoids greasy foods because they worsen nausea. She also avoids meat on many days because the smell bothers her. She eats bananas, mango, rice, crackers, soup, and occasional yogurt because those foods feel easier to tolerate.
 
-### Why this case is hard
+## Patient priorities
 
-The medication is producing clinically desirable weight and glucose effects, but intake adequacy is now the problem. Traditional diabetes counseling focused on reducing intake may be inappropriate. CKD complicates protein advice: the patient may need enough protein to preserve lean mass while avoiding unnecessarily high-protein dieting.
+Ms. P wants to keep the diabetes benefits but reduce nausea and avoid muscle loss. She asks whether she should force herself to eat protein, whether she can use smoothies, and whether kidney disease means she should avoid protein shakes.
 
-### Evidence-resolution challenge
+## Additional case details
 
-GLP-1/GIP therapy changes appetite and intake patterns, but nutrition guidelines are still catching up to medication-induced hypophagia, particularly in patients with CKD and cardiometabolic disease. The evidence does not provide a simple individualized threshold for protein, fiber, hydration, and micronutrient adequacy in this exact scenario.
-
-### Expected reasoning behaviors
-
-A strong system should:
-
-- Recognize that “eat less” is no longer the right primary advice.
-- Prioritize nutritional adequacy within reduced appetite.
-- Recommend small, structured, protein-containing meals/snacks.
-- Address constipation with fluid, fiber strategy, and clinical follow-up.
-- Avoid high-protein bodybuilding-style advice because of CKD.
-- Recommend monitoring renal function, hydration, weight-loss rate, symptoms, glucose, blood pressure, and nutrition adequacy.
-
-### Model should avoid
-
-- Praising weight loss without assessing adequacy.
-- Recommending aggressive calorie restriction.
-- Ignoring CKD when discussing protein.
-- Treating nausea/constipation as unrelated to dietary feasibility.
-
-### Benchmark scoring targets
-
-- Does the system adapt advice to medication-induced appetite suppression?
-- Does it balance weight loss benefit with adequacy risk?
-- Does it avoid both protein neglect and excessive protein advice?
-- Does it flag symptoms that need clinician follow-up?
-
----
+- She has no individualized kidney diet plan.
+- She has not been told how much protein to aim for.
+- She has constipation and low fluid intake during work shifts.
+- She sometimes skips medications when she feels nauseated.
+- She has lost interest in cooking because smells trigger nausea.

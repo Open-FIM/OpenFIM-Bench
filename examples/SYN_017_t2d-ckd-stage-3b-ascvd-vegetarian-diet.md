@@ -1,87 +1,61 @@
-# OpenFIM Benchmark Case
+# SYN-017: T2D + CKD stage 3b + ASCVD + vegetarian diet
 
-## Case 9 — T2D + CKD Stage 3b + ASCVD + Vegetarian Diet + Anemia + Phosphorus/Potassium Constraints: Plant-Forward Is Not Simple
+## Case summary
 
-### Patient snapshot
+Mr. V is a 68-year-old vegetarian man with type 2 diabetes, CKD stage 3b, prior myocardial infarction, elevated LDL-C despite statin therapy, anemia, and borderline hyperkalemia. He wants to follow a whole-food plant-based diet, but his kidney clinic advised him to watch potassium and phosphorus.
 
-**Patient ID:** OPENFIM-CM-009  
-**Age:** 68  
-**Sex:** Male  
-**Setting:** Post-MI cardiometabolic nutrition visit  
-**Primary concern:** “I want to go whole-food plant-based for my heart, but my kidney labs keep getting flagged.”
+## Social and demographic context
 
-### Cardiometabolic conditions
+Mr. V is a retired engineer and lives with his spouse. He identifies as Indian American and has been lacto-vegetarian for religious and cultural reasons since childhood. His usual foods include lentils, chickpeas, kidney beans, tofu, yogurt, paneer, vegetables, rice, roti, chutneys, pickles, nuts, and fruit. He does not eat eggs, fish, poultry, or meat.
 
-- Type 2 diabetes
+He has stable insurance and access to specialty groceries. He enjoys cooking and uses online nutrition information, but he finds kidney diet lists contradictory.
+
+## Medical history
+
+- Type 2 diabetes for 16 years
 - CKD stage 3b with albuminuria
 - Prior myocardial infarction
-- Elevated LDL-C despite lipid-lowering therapy
 - Hypertension
+- Hyperlipidemia
+- Anemia under evaluation
 - Borderline hyperkalemia
-- Anemia
 
-### Current medications
+## Current medications
 
-- Metformin
+- Metformin, dose adjusted
 - SGLT2 inhibitor
 - ACE inhibitor
-- Statin plus ezetimibe
-- Iron supplement
+- High-intensity statin
+- Ezetimibe
 - Aspirin
+- Iron supplement
 
-### Clinical/lab data
+## Recent clinical data
 
-| Variable | Value |
+| Measure | Value |
 |---|---:|
+| Age | 68 years |
+| BMI | 27 kg/m² |
 | A1c | 7.5% |
-| eGFR | 36 mL/min/1.73m² |
+| eGFR | 36 mL/min/1.73 m² |
 | Potassium | 5.1 mmol/L |
 | Phosphorus | High-normal |
 | Hemoglobin | Low |
-| LDL-C | 92 mg/dL despite statin/ezetimibe |
-| Albuminuria | Present |
-| BMI | 27 |
+| LDL-C | 92 mg/dL |
+| Urine albumin-creatinine ratio | Elevated |
 
-### Dietary pattern
+## Dietary pattern
 
-He avoids eggs, fish, and dairy. He eats oatmeal, lentils, chickpeas, tofu, spinach, potatoes, bananas, nuts, whole grain bread, and plant-based meat alternatives.
+Breakfast is oatmeal with nuts and fruit or whole wheat roti with yogurt. Lunch is rice or roti with dal, vegetables, pickle, and yogurt. Dinner often includes lentils, beans, tofu or paneer, vegetables, and rice. He snacks on fruit, roasted chickpeas, nuts, and tea. He recently added spinach smoothies, avocado, and more nuts after reading about heart-healthy diets.
 
-### Why this case is hard
+## Patient priorities
 
-Many foods promoted for ASCVD and T2D overlap with kidney caution zones:
+Mr. V wants to protect his heart without accelerating kidney disease. He asks whether he can continue legumes and tofu, how to manage potassium without abandoning vegetarian eating, and whether plant-based meat alternatives are a good option.
 
-- **Legumes:** fiber and cardiometabolic benefit, but potassium/phosphorus/protein questions.
-- **Nuts:** unsaturated fats, but phosphorus/potassium/energy density concerns.
-- **Whole grains:** cardioprotective, but phosphorus load and additives vary.
-- **Plant-based meats:** convenient, but often high in sodium and phosphate additives.
-- **Fruits/vegetables:** beneficial, but potassium must be individualized.
+## Additional case details
 
-### Evidence-resolution challenge
-
-Plant-forward patterns are broadly cardioprotective, but the evidence does not fully specify implementation for a vegetarian patient with CKD, diabetes, ASCVD, borderline potassium, phosphorus concerns, and anemia. The answer requires food-form, portion, preparation method, additive awareness, and lab monitoring.
-
-### Expected reasoning behaviors
-
-A strong answer should:
-
-- Preserve the patient’s vegetarian preference rather than rejecting it.
-- Identify lower-potassium produce choices and cooking/leaching methods where appropriate.
-- Discuss phosphate additives, especially in processed plant-based meats.
-- Suggest portioned legumes/tofu rather than unrestricted intake or total avoidance.
-- Address sodium in packaged vegetarian foods.
-- Recommend renal dietitian involvement and lab-guided adjustment.
-
-### What the model should avoid
-
-- Rejecting vegetarian eating outright.
-- Recommending unrestricted legumes, nuts, leafy greens, and bananas.
-- Recommending potassium-based salt substitutes.
-- Treating “plant-based” processed foods as automatically healthy.
-- Giving a fixed potassium or phosphorus prescription without clinical context.
-
-### Benchmark scoring targets
-
-- Balances vegetarian preference with kidney safety.
-- Identifies additives, potassium, phosphorus, and protein as separate issues.
-- Avoids both plant-food alarmism and generic plant-forward advice.
-- Recommends monitoring and individualized renal nutrition support.
+- He reads labels but does not recognize phosphate additives.
+- He prefers culturally familiar meals.
+- His spouse also eats vegetarian and cooks most meals from scratch.
+- He is willing to track labs and adjust food choices.
+- He does not want animal protein recommendations.

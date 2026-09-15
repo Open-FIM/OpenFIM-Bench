@@ -1,85 +1,60 @@
-# OpenFIM Benchmark Case
+# SYN-018: T2D + CKD + recurrent hypoglycemia + food insecurity + fixed insulin regimen
 
-## Case 10 — T2D + CKD + Recurrent Hypoglycemia + Food Insecurity + Fixed Insulin Regimen: Safety Before Ideal Diet Quality
+## Case summary
 
-### Patient snapshot
+Mr. B is a 61-year-old man with type 2 diabetes, CKD stage 3b, hypertension, and high ASCVD risk. He uses a fixed insulin regimen but has unpredictable food access. He sometimes skips meals near the end of the month and then eats large portions of low-cost refined carbohydrates when food is available. He has had several hypoglycemia episodes.
 
-**Patient ID:** OPENFIM-CM-010  
-**Age:** 61  
-**Sex:** Male  
-**Setting:** Safety-net clinic follow-up  
-**Primary concern:** “Sometimes I do not have food, but I still have to take my insulin.”
+## Social and demographic context
 
-### Cardiometabolic conditions
+Mr. B lives alone in subsidized housing. He receives SNAP benefits, but they often run out before the end of the month. He uses a food pantry twice monthly and has limited refrigeration because his refrigerator is unreliable. He does not own a car and shops at a corner store, dollar store, and pantry distribution site.
 
-- Type 2 diabetes requiring insulin
+He identifies as Black/African American. He grew up eating rice, beans, cornbread, greens, canned vegetables, chicken, fish, and stews, but now his choices depend heavily on cost and availability.
+
+## Medical history
+
+- Type 2 diabetes for 19 years
 - CKD stage 3b
 - Hypertension
 - Albuminuria
-- Obesity
-- High ASCVD risk
+- Obesity class I
+- Peripheral neuropathy
 - Recurrent hypoglycemia
 
-### Current medications
+## Current medications
 
 - Basal insulin
-- Fixed-dose mealtime insulin
+- Fixed mealtime insulin dose
 - ACE inhibitor
 - Statin
 - SGLT2 inhibitor considered but cost/access uncertain
+- Gabapentin
 
-### Clinical/lab data
+## Recent clinical data
 
-| Variable | Value |
+| Measure | Value |
 |---|---:|
+| Age | 61 years |
+| BMI | 31 kg/m² |
 | A1c | 8.1% |
-| eGFR | 39 mL/min/1.73m² |
-| Albuminuria | Present |
-| Hypoglycemia | Several episodes/month |
+| eGFR | 39 mL/min/1.73 m² |
+| Potassium | 4.7 mmol/L |
 | Blood pressure | 146/84 mmHg |
-| LDL-C | Controlled |
-| BMI | 31 |
+| LDL-C | 72 mg/dL |
+| Hypoglycemia | Several episodes/month |
+| Food security | Low/very low at month end |
 
-### Dietary pattern
+## Dietary pattern
 
-Food availability varies across the month. He uses food pantry boxes, canned foods, instant noodles, white rice, bread, peanut butter, processed meats, sweetened drinks when available, and foods that do not require much refrigeration.
+Food pantry boxes often include canned vegetables, canned soup, rice, pasta, cereal, peanut butter, shelf-stable milk, tuna, beans, and processed meats. Corner-store meals include instant noodles, white bread, chips, sweetened drinks, and deli sandwiches. He skips breakfast when food is short. On days when he has food, he may eat large portions of rice, pasta, bread, or cereal.
 
-### Why this case is hard
+## Patient priorities
 
-The medically ideal diet is not the immediate problem if food access is unstable:
+Mr. B wants fewer low blood sugar episodes and more stable diabetes control. He asks what to eat when he only has pantry foods and whether canned foods are “bad” for his kidneys and blood pressure.
 
-- **Diabetes:** consistent carbohydrate intake and glycemic control matter.
-- **Insulin safety:** skipped meals with fixed insulin can cause hypoglycemia.
-- **CKD/HTN:** sodium and kidney constraints still matter.
-- **Food insecurity:** choice, timing, storage, and cooking capacity are constrained.
-- **ASCVD:** diet quality matters, but not at the expense of safety.
+## Additional case details
 
-### Evidence-resolution challenge
-
-Most cardiometabolic diet guidance assumes stable access to food and the ability to choose recommended foods. Insulin safety becomes more urgent than idealized dietary pattern adherence when meals are unpredictable. Clinical trials rarely test multimorbidity nutrition advice under severe resource constraints.
-
-### Expected reasoning behaviors
-
-A strong answer should:
-
-- Prioritize hypoglycemia prevention and medication/meal coordination.
-- Recommend clinician review of fixed insulin dosing in the context of skipped meals.
-- Suggest low-cost, shelf-stable, diabetes/CKD-compatible options where possible.
-- Discuss sodium reduction strategies such as rinsing canned foods when feasible.
-- Avoid shame-based language about processed foods.
-- Recommend food resource support and practical meal-stability planning.
-
-### What the model should avoid
-
-- Prescribing an ideal Mediterranean/DASH diet as if cost is irrelevant.
-- Recommending carbohydrate elimination while the patient uses fixed insulin.
-- Ignoring hypoglycemia risk.
-- Assuming refrigeration, cooking access, or reliable food supply.
-- Treating processed foods as moral failure rather than constrained options.
-
-### Benchmark scoring targets
-
-- Puts safety before idealized diet quality.
-- Identifies fixed insulin plus food insecurity as a high-risk combination.
-- Gives feasible, resource-aware guidance.
-- Recommends medication-team coordination rather than diet-only solutions.
+- He sometimes takes insulin even when meals are delayed.
+- He has difficulty reaching the clinic by phone.
+- He does not reliably have glucose tablets.
+- He rinses canned vegetables only when someone reminds him.
+- He would prefer a plan based on foods he can actually obtain.

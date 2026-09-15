@@ -1,85 +1,63 @@
-# OpenFIM Benchmark Case
+# SYN-011: T2D + MASH/NAFLD + hypertriglyceridemia + obesity
 
-## Case 3 — T2D + MASH/NAFLD + Hypertriglyceridemia + Obesity: Which Endpoint Comes First?
+## Case summary
 
-### Patient snapshot
+Mr. A is a 54-year-old man with type 2 diabetes, obesity, metabolic dysfunction-associated steatotic liver disease with suspected MASH, and persistent hypertriglyceridemia. He wants to know whether he should follow a low-carbohydrate diet, a Mediterranean diet, or a low-fat diet because he has been given all three suggestions.
 
-**Patient ID:** OPENFIM-CM-003  
-**Age:** 52  
-**Sex:** Female  
-**Setting:** Endocrinology and hepatology co-management  
-**Primary concern:** “My liver doctor told me to lose weight. My diabetes doctor said reduce carbs. My lipid panel says triglycerides are high. I tried keto and my sugars improved, but my LDL went up.”
+## Social and demographic context
 
-### Cardiometabolic conditions
+Mr. A is a first-generation immigrant from South Asia and lives with his spouse, two teenage children, and his mother. Meals are usually shared family meals. Rice, flatbreads, lentils, curries, fried snacks, sweet tea, and desserts are common at home and at social gatherings. His mother prepares many meals and uses traditional recipes.
 
-- Type 2 diabetes
-- Metabolic dysfunction-associated steatotic liver disease with suspected MASH
-- Severe hypertriglyceridemia, not pancreatitis range but persistently high
-- Obesity, class II
+He works in information technology and spends most of the day seated. He has good insurance but limited time for exercise and meal planning. He travels for work twice a month and eats hotel breakfasts, airport food, and restaurant meals during travel.
+
+## Medical history
+
+- Type 2 diabetes for 8 years
+- Obesity class II
+- MASLD with suspected MASH
+- Hypertriglyceridemia
 - Hypertension
-- LDL-C increase during a high-saturated-fat low-carbohydrate diet
+- Low HDL-C
+- Family history of premature cardiovascular disease
 
-### Current medications
+## Current medications
 
 - Metformin
-- Semaglutide
-- Rosuvastatin
-- Icosapent ethyl
-- Amlodipine
-- Losartan
+- GLP-1 receptor agonist recently prescribed but not yet started
+- Statin
+- ACE inhibitor
+- Vitamin D supplement
 
-### Clinical/lab data
+## Recent clinical data
 
-- BMI: 38 kg/m²
-- HbA1c: 7.5%, improved from 8.8% after lower-carbohydrate diet
-- Fasting triglycerides: 385 mg/dL
-- LDL-C: 128 mg/dL, previously 86 mg/dL
-- ALT/AST: mildly elevated
-- Liver stiffness/imaging suggests steatosis and possible fibrosis risk
-- Blood pressure: 132/80 mmHg
+| Measure | Value |
+|---|---:|
+| Age | 54 years |
+| BMI | 37 kg/m² |
+| A1c | 8.0% |
+| Fasting triglycerides | 410 mg/dL |
+| HDL-C | 34 mg/dL |
+| LDL-C | 108 mg/dL |
+| ALT | 72 U/L |
+| AST | 58 U/L |
+| Platelets | Normal |
+| Fibrosis risk score | Intermediate |
+| Blood pressure | 138/84 mmHg |
 
-### Dietary pattern
+## Dietary pattern
 
-- Recently adopted low-carb eating
-- Breakfast: eggs, cheese, bacon, coffee with cream
-- Lunch: bunless burger, salad with creamy dressing
-- Dinner: steak/chicken with non-starchy vegetables
-- Snacks: cheese, nuts, low-carb packaged bars
-- Very little fruit, legumes, oats, or whole grains
-- High intake of saturated fat relative to baseline
+Breakfast is usually tea with milk and sugar, toast, paratha, or leftover rice. Lunch may be rice with lentils, curry, yogurt, and pickles. Dinner is often rice or flatbread with meat or lentil curry and vegetables. Fried snacks and sweets are common in the evening. He drinks sugar-sweetened tea several times daily and has fruit juice on weekends.
 
-### Why this case is hard
+He tried a ketogenic diet for 4 weeks and lost 6 lb, but found it socially difficult and increased intake of cheese, eggs, butter, and meat. His glucose improved temporarily, but he stopped because his family meals became difficult.
 
-The current diet improved glycemia but worsened LDL-C. It may help triglycerides if carbohydrate quality and weight loss improve, but the implementation is high in saturated fat and low in fiber-rich foods. MASH/NAFLD guidance prioritizes weight loss and dietary quality, while diabetes guidance may emphasize carbohydrate reduction, and ASCVD prevention emphasizes atherogenic lipid lowering.
+## Patient priorities
 
-### Evidence-resolution challenge
+Mr. A wants to lower liver fat, improve diabetes, reduce triglycerides, and avoid heart disease. He does not want advice that eliminates staple foods entirely. He asks whether reducing rice is more important than reducing fat, and whether lentils are good or bad for him.
 
-This case exposes the difficulty of comparing dietary strategies across endpoints that move in different directions: HbA1c improves, LDL-C worsens, triglycerides remain high, liver fat needs reduction, and long-term CVD risk remains central. The evidence does not resolve this with a single universal diet label.
+## Additional case details
 
-### Expected reasoning behaviors
-
-A strong system should:
-
-- Recognize that the patient experienced both benefit and harm from the current diet pattern.
-- Preserve useful elements of carbohydrate quality/portion control while reducing saturated fat.
-- Suggest replacing processed meats, butter, cream, and high-fat dairy with unsaturated fats and leaner proteins.
-- Reintroduce selected high-fiber, lower-glycemic carbohydrates if tolerated.
-- Prioritize weight loss, triglyceride reduction, liver risk reduction, and LDL-C/ApoB lowering together.
-- Recommend monitoring HbA1c/CGM, fasting triglycerides, LDL-C/ApoB, liver enzymes, fibrosis markers/imaging, and weight trajectory.
-
-### Model should avoid
-
-- Declaring the low-carb diet a success based only on HbA1c.
-- Declaring the low-carb diet a failure without preserving the glycemic benefits.
-- Ignoring saturated fat quality.
-- Recommending high-fructose or refined carbohydrate substitutions.
-- Providing generic “Mediterranean diet” advice without addressing triglycerides and glucose.
-
-### Benchmark scoring targets
-
-- Does the system explicitly weigh competing endpoints?
-- Does it distinguish carbohydrate amount from carbohydrate quality?
-- Does it address saturated fat and LDL-C/ApoB?
-- Does it recommend a modified pattern rather than a binary keto versus Mediterranean answer?
-
----
+- He has not met with a hepatology dietitian.
+- He does not drink alcohol regularly.
+- He eats late dinners after work.
+- Family members are supportive but skeptical of “Western diet plans.”
+- He would prefer food substitutions that fit South Asian meals.

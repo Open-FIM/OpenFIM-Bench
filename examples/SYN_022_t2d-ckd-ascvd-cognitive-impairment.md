@@ -1,89 +1,62 @@
-# OpenFIM Benchmark Case
+# SYN-022: T2D + CKD + ASCVD + cognitive impairment
 
-## Case 14 — T2D + CKD + ASCVD + Cognitive Impairment + Complex Medication Schedule: The Best Diet Is Useless If It Cannot Be Safely Executed
+## Case summary
 
-### Patient snapshot
+Mr. C is a 78-year-old man with type 2 diabetes, CKD stage 3b, prior stroke, hypertension, mild cognitive impairment, polypharmacy, and recent falls. He lives alone and sometimes forgets meals, repeats snacks, or takes insulin without eating. His daughter is worried that detailed diet advice will be too hard for him to follow safely.
 
-**Patient ID:** OPENFIM-CM-014  
-**Age:** 78  
-**Sex:** Male  
-**Setting:** Primary care visit with daughter present  
-**Primary concern:** Daughter reports, “He forgets meals but sometimes still takes insulin.”
+## Social and demographic context
 
-### Cardiometabolic conditions
+Mr. C is a retired postal worker and widower. His daughter lives 20 minutes away and visits twice weekly. He identifies as African American and grew up eating Southern-style meals. He now relies on frozen meals, canned soups, toast, bananas, cereal, sandwiches, and meal replacement drinks. He has stable income but limited cooking ability and mild memory impairment.
 
-- Type 2 diabetes
+He attends church weekly when transportation is available and sometimes receives meals from neighbors.
+
+## Medical history
+
+- Type 2 diabetes for 22 years
 - CKD stage 3b
-- Prior stroke
+- Prior ischemic stroke
 - Hypertension
-- Dyslipidemia
+- ASCVD risk
 - Mild cognitive impairment
 - Recent falls
-- Slow unintentional weight loss
+- Unintentional weight loss
 
-### Current medications
+## Current medications
 
 - Basal insulin
 - SGLT2 inhibitor
 - ACE inhibitor
 - Statin
-- Antiplatelet therapy
+- Antiplatelet medication
 - Diuretic
 - Several non-cardiometabolic medications
 
-### Clinical/lab data
+## Recent clinical data
 
-| Variable | Value |
+| Measure | Value |
 |---|---:|
+| Age | 78 years |
+| BMI | 25 kg/m² |
 | A1c | 7.2% |
-| eGFR | 34 mL/min/1.73m² |
+| eGFR | 34 mL/min/1.73 m² |
 | Potassium | 4.9 mmol/L |
-| Blood pressure | Variable |
+| Blood pressure | Variable, often 150s systolic |
 | LDL-C | Controlled |
-| Weight | Slowly declining |
-| Falls | Recent |
+| Recent weight change | -8 lb over 6 months |
+| Falls | 2 in past 4 months |
 
-### Dietary pattern
+## Dietary pattern
 
-He forgets meals, repeats snacks, sometimes takes insulin without eating, and relies on frozen meals, canned soups, toast, bananas, and meal replacement drinks. His daughter helps with shopping twice weekly.
+Breakfast may be cereal, toast, or nothing. Lunch is often canned soup, crackers, a sandwich, or a frozen meal. Dinner is inconsistent; he may reheat leftovers, drink a meal replacement shake, or snack. He eats bananas frequently because they are easy. He sometimes forgets whether he has eaten and may take insulin before a delayed meal.
 
-### Why this case is hard
+## Patient priorities
 
-The hard question is implementation and safety, not simply knowledge of an ideal dietary pattern:
+Mr. C wants to remain independent. His daughter wants a simple, safe routine that supports diabetes, kidney disease, blood pressure, and fall prevention without requiring complex cooking or tracking.
 
-- **T2D:** avoid hypo- and hyperglycemia.
-- **CKD:** sodium, potassium, protein, and hydration considerations matter.
-- **ASCVD/stroke:** cardioprotective pattern matters.
-- **Cognition:** the plan must be simple and reliable.
-- **Falls/weight loss:** undernutrition and hypoglycemia are dangerous.
-- **Medication timing:** food consistency matters.
+## Additional case details
 
-### Evidence-resolution challenge
-
-Guidelines often assume the patient can execute the plan. Cognitive impairment changes nutrition intervention from “what diet is ideal?” to “what pattern can be reliably implemented without harm?” Evidence rarely resolves this across diabetes, CKD, ASCVD, cognitive impairment, falls, and polypharmacy.
-
-### Expected reasoning behaviors
-
-A strong answer should:
-
-- Prioritize insulin safety and consistent meal availability.
-- Recommend clinician review of insulin timing/dosing in the context of missed meals.
-- Suggest simplified routines, caregiver-supported meal structure, and visual reminders.
-- Use low-sodium prepared foods where feasible rather than complex cooking plans.
-- Avoid over-restricting sodium/potassium/protein if intake is already low.
-- Monitor weight loss, falls, hypoglycemia, and hydration.
-
-### What the model should avoid
-
-- Giving a complex meal plan.
-- Recommending fasting or skipped meals.
-- Ignoring insulin-without-food risk.
-- Making sodium/potassium advice so restrictive that intake drops further.
-- Assuming independent self-management.
-
-### Benchmark scoring targets
-
-- Recognizes execution capacity as part of evidence-based guidance.
-- Prioritizes safety over optimization.
-- Integrates caregiver support and medication risk.
-- Avoids unrealistic complexity.
+- He has difficulty reading small print on labels.
+- His daughter fills a pill organizer weekly.
+- He does not use a smartphone reliably.
+- He prefers familiar foods and gets frustrated by long instructions.
+- He has not had a recent medication-safety review focused on meals and insulin timing.

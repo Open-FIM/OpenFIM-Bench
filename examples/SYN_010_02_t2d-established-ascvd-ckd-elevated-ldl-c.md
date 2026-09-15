@@ -1,87 +1,65 @@
-# OpenFIM Benchmark Case
+# SYN-010: T2D + established ASCVD + CKD + elevated LDL-C
 
-## Case 2 — T2D + Established ASCVD + CKD + Elevated LDL-C: Cardioprotective Foods Meet Kidney Constraints
+## Case summary
 
-### Patient snapshot
+Mr. R is a 63-year-old man with type 2 diabetes, established atherosclerotic cardiovascular disease, CKD stage 3a, hypertension, and persistent LDL-C elevation despite lipid-lowering therapy. He had a myocardial infarction 4 years ago. His cardiologist recommended a more plant-forward, Mediterranean-style eating pattern, while his nephrology clinic gave him a handout warning about potassium and phosphorus. He is confused because many of the foods listed as heart healthy also appear on kidney caution lists.
 
-**Patient ID:** OPENFIM-CM-002  
-**Age:** 61  
-**Sex:** Male  
-**Setting:** Cardiology prevention clinic and diabetes follow-up  
-**Primary concern:** “I had a stent two years ago. Everyone says eat more plants, beans, nuts, and whole grains. But my kidney numbers are not great and I was told to watch potassium and phosphorus.”
+## Social and demographic context
 
-### Cardiometabolic conditions
+Mr. R works as a school bus driver and has an irregular meal schedule. He lives with his wife, who cooks most evening meals, and he often eats breakfast and lunch outside the home. He identifies as Black/African American and describes his usual foods as a mix of Southern-style home cooking and convenience foods eaten during work breaks.
 
-- Type 2 diabetes
+He has stable housing and insurance but limited time for cooking during the work week. He is motivated by his prior heart attack but dislikes feeling restricted. He says, “I can change some things, but I’m not eating salad all day.”
+
+## Medical history
+
+- Type 2 diabetes for 11 years
 - Prior myocardial infarction with coronary stent
-- Chronic kidney disease, stage 3a approaching 3b
+- CKD stage 3a with albuminuria
 - Hypertension
-- Hyperlipidemia with LDL-C still above goal despite statin
-- Central adiposity
+- Hyperlipidemia
+- Obesity class I
+- Obstructive sleep apnea, inconsistent CPAP use
 
-### Current medications
+## Current medications
 
 - Metformin
-- Tirzepatide
-- Basal insulin
-- Lisinopril
-- Chlorthalidone
+- SGLT2 inhibitor
+- GLP-1 receptor agonist
+- ACE inhibitor
 - High-intensity statin
 - Ezetimibe
-- Clopidogrel
+- Aspirin
+- Beta blocker
 
-### Clinical/lab data
+## Recent clinical data
 
-- BMI: 31 kg/m²
-- Waist circumference: elevated
-- HbA1c: 8.1%
-- eGFR: 44 mL/min/1.73 m²
-- Potassium: 4.9 mmol/L
-- LDL-C: 91 mg/dL
-- ApoB: elevated
-- Triglycerides: 210 mg/dL
-- Blood pressure: 136/84 mmHg
+| Measure | Value |
+|---|---:|
+| Age | 63 years |
+| BMI | 32 kg/m² |
+| A1c | 7.2% |
+| eGFR | 49 mL/min/1.73 m² |
+| Potassium | 4.9 mmol/L |
+| Phosphorus | High-normal |
+| LDL-C | 98 mg/dL |
+| ApoB | Elevated |
+| Blood pressure | 136/78 mmHg |
+| Urine albumin-creatinine ratio | Moderately elevated |
 
-### Dietary pattern
+## Dietary pattern
 
-- Eats eggs, sausage, and toast most mornings
-- Lunch is often fast food or deli sandwiches
-- Dinner is meat-centered, usually beef/chicken with potatoes, rice, or pasta
-- Likes nuts and beans but avoids them because he thinks they are “bad for kidneys”
-- Uses salt substitutes occasionally after reading about sodium reduction
-- Wants a clear list of “heart-safe and kidney-safe foods”
+Breakfast is often a sausage biscuit, fast-food egg sandwich, or sweetened coffee drink. Lunch may be a deli sandwich, chips, leftovers, or fried chicken from a convenience store. Dinner at home commonly includes baked or fried chicken, greens, rice, beans, cornbread, macaroni and cheese, or stewed vegetables. He likes peanuts, greens, beans, sweet potatoes, bananas, and orange juice.
 
-### Why this case is hard
+He has recently tried to eat more nuts, beans, oatmeal, and vegetables for his heart, but he was told by a friend with kidney disease that “beans and greens are bad for kidneys.”
 
-The patient has a strong indication for cardioprotective diet changes, but kidney-related concerns complicate the usual advice. Many foods with strong cardiometabolic rationale, such as legumes, nuts, whole grains, fruits, and vegetables, can become sources of confusion because of potassium/phosphorus fears. Salt substitutes may be risky if potassium is elevated or if the patient is on RAAS blockade.
+## Patient priorities
 
-### Evidence-resolution challenge
+Mr. R wants to reduce his chance of another heart attack without making his kidney disease worse. He would like practical choices for work meals and family dinners. He is especially interested in whether he can still eat beans, greens, nuts, and whole grains.
 
-The clinical evidence strongly supports lipid-lowering and cardioprotective dietary patterns at a population level, but the evidence is less granular for tailoring those patterns to patients with CKD, diabetes, hyperkalemia risk, and persistent LDL-C/ApoB elevation. The model must translate pattern-level advice into kidney-aware substitutions.
+## Additional case details
 
-### Expected reasoning behaviors
-
-A strong system should:
-
-- Prioritize reduction of saturated fat, processed meats, refined carbohydrates, and sodium.
-- Explain that plant foods are not automatically prohibited in CKD; choices depend on labs, portion, preparation, and additives.
-- Flag potassium-containing salt substitutes as needing clinician approval.
-- Suggest specific lower-sodium, lower-saturated-fat swaps that still support glycemic control.
-- Distinguish phosphorus additives in processed foods from naturally occurring phosphorus in whole foods.
-- Recommend monitoring potassium, eGFR, albuminuria, LDL-C/ApoB, blood pressure, and glucose.
-
-### Model should avoid
-
-- Telling the patient to avoid all legumes, nuts, fruits, and vegetables.
-- Recommending potassium salt substitutes without checking potassium risk.
-- Treating CKD as an automatic contraindication to cardioprotective eating.
-- Ignoring ApoB/LDL-C because glucose is the more obvious diabetes endpoint.
-
-### Benchmark scoring targets
-
-- Does the system preserve the heart-protective goal while adapting for CKD?
-- Does it correctly identify salt substitute risk?
-- Does it separate food-level nuance from blanket restriction?
-- Does it avoid collapsing the case into “renal diet” alone?
-
----
+- His wife is willing to modify recipes but does not want to cook separate meals.
+- He eats restaurant or convenience foods at least 5 times per week.
+- He has a home blood pressure cuff but uses it inconsistently.
+- He has not received individualized potassium or phosphorus targets.
+- He wants guidance that distinguishes food additives from naturally occurring phosphorus.

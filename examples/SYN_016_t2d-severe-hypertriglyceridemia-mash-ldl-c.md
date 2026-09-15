@@ -1,85 +1,57 @@
-# OpenFIM Benchmark Case
+# SYN-016: T2D + severe hypertriglyceridemia + MASH + LDL-C increase after low-carb diet
 
-## Case 8 — T2D + Severe Hypertriglyceridemia + MASH + LDL-C Hyper-Response to Low-Carb Diet: One Diet Helps and Hurts at the Same Time
+## Case summary
 
-### Patient snapshot
+Mr. D is a 56-year-old man with type 2 diabetes, obesity, biopsy-confirmed MASH, severe hypertriglyceridemia, and high ASCVD risk. He tried a ketogenic diet for 3 months. His A1c and triglycerides improved, but LDL-C and ApoB increased substantially.
 
-**Patient ID:** OPENFIM-CM-008  
-**Age:** 56  
-**Sex:** Male  
-**Setting:** Follow-up after self-initiated ketogenic diet  
-**Primary concern:** “My sugar and triglycerides improved on keto, so why is my doctor worried?”
+## Social and demographic context
 
-### Cardiometabolic conditions
+Mr. D is a long-haul truck driver. He sleeps irregular hours and eats most meals from truck stops, diners, and packaged foods. He identifies as non-Hispanic White and grew up eating meat-and-potatoes meals. He likes the simplicity of keto because he can order burgers without buns, eggs, bacon, steak, cheese, and salads almost anywhere.
 
-- Type 2 diabetes
-- Obesity, class II
+He lives with his partner but is away from home most weekdays. He has commercial insurance but inconsistent appointment attendance due to travel.
+
+## Medical history
+
+- Type 2 diabetes for 10 years
+- Obesity class II
 - Biopsy-confirmed MASH
-- Severe hypertriglyceridemia, improved but still elevated
-- High ASCVD risk
-- LDL-C/ApoB hyper-response after saturated-fat-heavy ketogenic diet
+- Severe hypertriglyceridemia
+- Hypertension
+- Elevated coronary calcium score
+- Family history of ASCVD
 
-### Current medications
+## Current medications
 
 - Metformin
 - GLP-1 receptor agonist recently started
 - High-intensity statin
+- Antihypertensive medication
 - Icosapent ethyl or fibrate under consideration
-- Antihypertensive therapy
 
-### Clinical/lab data
+## Recent clinical data
 
-| Variable | Before ketogenic diet | After 3 months ketogenic diet |
+| Measure | Before keto | After 3 months keto |
 |---|---:|---:|
 | A1c | 8.2% | 6.9% |
 | Triglycerides | 620 mg/dL | 280 mg/dL |
 | LDL-C | 104 mg/dL | 178 mg/dL |
-| ApoB | Elevated | Increased further |
-| ALT/AST | Mildly elevated | Mildly elevated |
-| Fibrosis risk | Intermediate | Not reassessed |
-| BMI | 38 | 35 |
+| ApoB | Elevated | Higher |
+| ALT | 86 U/L | 62 U/L |
+| BMI | 38 kg/m² | 36 kg/m² |
+| Blood pressure | 146/88 mmHg | 136/82 mmHg |
 
-### Dietary pattern
+## Dietary pattern
 
-He eats eggs, butter, cheese, bacon, steak, low-carb tortillas, protein bars, and very few fruits, beans, or whole grains. He is pleased with improved glucose readings and does not want to “go back to carbs.”
+On keto, breakfast is eggs, sausage, and coffee with cream. Lunch is burgers without buns, cheese, pork rinds, or deli meat. Dinner is steak, chicken wings, salad with ranch dressing, or fast-food bunless sandwiches. He avoids rice, beans, fruit, oats, potatoes, and bread. He eats very few whole grains or legumes. He uses butter and cheese frequently.
 
-### Why this case is hard
+## Patient priorities
 
-The diet improved some risk pathways but worsened others:
+Mr. D wants to keep the glucose and triglyceride improvements without increasing heart risk. He asks whether LDL-C elevation is acceptable because the diet improved his diabetes. He needs options that work while traveling.
 
-- **Glycemia:** improved.
-- **Triglycerides:** improved substantially.
-- **Weight:** improved.
-- **LDL-C/ApoB:** worsened substantially.
-- **MASH:** weight loss may help, but diet composition and long-term risk remain unresolved.
-- **ASCVD risk:** ApoB/LDL-C elevation is difficult to dismiss.
+## Additional case details
 
-### Evidence-resolution challenge
-
-Low-carbohydrate diet trials often report average lipid effects, but this patient appears to be a hyper-responder. MASH, T2D, severe hypertriglyceridemia, and ASCVD prevention literatures do not provide one clean answer for how to weight improved A1c/TG against worsened ApoB/LDL-C in this individual.
-
-### Expected reasoning behaviors
-
-A strong answer should:
-
-- Separate carbohydrate restriction from a saturated-fat-heavy ketogenic implementation.
-- Preserve the components that helped glycemia and TGs where possible.
-- Recommend replacing butter, bacon, processed meats, and high saturated-fat dairy with unsaturated fat sources.
-- Consider a lower-carbohydrate Mediterranean-style pattern rather than a binary keto-versus-high-carb answer.
-- Emphasize ApoB/LDL-C follow-up and medication coordination.
-- Discuss liver, TG, LDL-C, and glycemic endpoints separately.
-
-### What the model should avoid
-
-- Saying “keto worked, continue it” based only on A1c/TG.
-- Saying “stop low-carb” without preserving the useful TG/glycemia signal.
-- Ignoring ApoB/LDL-C because glucose improved.
-- Treating all low-carbohydrate diets as nutritionally equivalent.
-- Making definitive MASH outcome claims from weight loss alone.
-
-### Benchmark scoring targets
-
-- Recognizes discordant biomarker response.
-- Distinguishes diet pattern from diet label.
-- Prioritizes both acute TG control and long-term ASCVD risk.
-- Proposes a modified approach and monitoring rather than an absolute diet ideology.
+- He is willing to reduce butter, cheese, bacon, and processed meats if given clear alternatives.
+- He is open to fish, nuts, olive-oil-based foods, and lower-carb vegetables.
+- He is not interested in calorie counting.
+- He has not received MASH-specific nutrition counseling.
+- Restaurant availability strongly shapes his choices.
